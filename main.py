@@ -40,6 +40,10 @@ def main():
             if(a.checkcollision(player)):
                 print("Game Over!")
                 exit()
+            for s in shots:
+                if(a.checkcollision(s)):
+                    a.split()
+                    s.kill()
 
         pygame.display.flip()
 
